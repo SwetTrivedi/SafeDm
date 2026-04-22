@@ -1,6 +1,10 @@
 from groq import Groq
+from dotenv import load_dotenv
+import os
 
-client = Groq(api_key="")
+load_dotenv()
+
+client = Groq(api_key=os.getenv("api_key"))
 
 def classify_message(text):
 
