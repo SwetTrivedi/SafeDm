@@ -37,7 +37,7 @@ import os
 import json
 
 # 🔐 env variables
-client = Groq(api_key=os.getenv("GROQ_API_KEY"))
+client = Groq(api_key=os.getenv("api_key"))
 
 bad_words_env = os.getenv("BAD_WORDS", "")
 BAD_WORDS = bad_words_env.split(",")
