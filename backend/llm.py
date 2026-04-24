@@ -21,7 +21,7 @@ def classify_message(text):
 
     chat = client.chat.completions.create(
         messages=[{"role": "user", "content": prompt}],
-        model="llama3-8b-8192"
+        model="llama-3.1-8b-instant"
     )
 
     content = chat.choices[0].message.content
