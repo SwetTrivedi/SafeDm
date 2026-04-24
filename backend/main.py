@@ -31,7 +31,7 @@
 
 from fastapi import FastAPI
 from pydantic import BaseModel
-from llm import classify_message
+from backend.llm import classify_message
 
 app = FastAPI()
 
